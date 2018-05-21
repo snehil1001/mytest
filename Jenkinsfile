@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 withEnv(['PYTHONPATH=/home/ubuntu/python']) {
-                sh  'python ./case1.py'
+                sh  'python ./test.py'
 } 
             }
         }
