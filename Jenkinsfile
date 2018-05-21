@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 withEnv(['PYTHONPATH=/home/ubuntu/python']) {
-                sh   pip install xmlrunner
+                pip install xmlrunner
                 sh  'python ./test.py'
 } 
             }
