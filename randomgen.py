@@ -1,14 +1,12 @@
 import random
 
-class randomgen:
 
- def randomgen():
-    buzz = ['continuous testing', 'continuous integration','continuous deployment','continuous improvement','devops']
-    adjectives = ['complete', 'modern', 'self-service', 'integrated', 'end-to-end']
-    adverbs = ['remarkably', 'enormously', 'substantially', 'significantly','seriously']
-    verbs = ['accelerates', 'improves', 'enhances', 'revamps', 'boosts']
-    n=len(buzz)
-    for x in range(n):
+buzz = ['continuous testing', 'continuous integration','continuous deployment','continuous improvement','devops']
+adjectives = ['complete', 'modern', 'self-service', 'integrated', 'end-to-end']
+adverbs = ['remarkably', 'enormously', 'substantially', 'significantly','seriously']
+verbs = ['accelerates', 'improves', 'enhances', 'revamps', 'boosts']
+n=len(buzz)
+for x in range(n):
         d=random.randint(0,n-1)
         e=random.randint(0,n-1)
         f=random.randint(0,n-1)
@@ -16,4 +14,3 @@ class randomgen:
         h=random.randint(0,n-1)
         print(buzz[d]+" "+buzz[e]+" "+adjectives[f]+" "+adverbs[g]+" "+verbs[h])
 
-randomgen()
